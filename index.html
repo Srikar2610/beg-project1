@@ -8,60 +8,116 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <h1>Srikar </h1>
-            <p>Web Developer | Devops Engineer</p>
+            <h1 class="logo">Your Name</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Srikar</h2>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#projects" class="btn-main">View My Work</a>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section-about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a passionate web developer with experience in creating dynamic and responsive websites. I love coding, designing, and always learning new things to improve my skills.</p>
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I’m a web developer with a passion for creating dynamic and user-friendly websites. I specialize in front-end and back-end development and strive to deliver high-quality, responsive web applications.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="section-skills">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Prediction of modernized loan approval system</h3>
-                    <p>A machine learning-based system designed to predict loan approval outcomes by analyzing borrower data, improving decision-making and efficiency in the lending process.</p>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>HTML & CSS</h3>
                 </div>
-                <div class="project">
-                    <h3>E-Commerce Website</h3>
-                    <p>An online platform that allows users to browse, purchase, and manage products, providing a seamless shopping experience with secure payment and delivery options.</p>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <h3>React.js</h3>
+                </div>
+                <div class="skill">
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill">
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX Design</h3>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Devops project</h3>
+                    <p>It is based on devops project</p>
+                    <a href="https://github.com/your-username/project1" class="btn-link">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Machine learning project</h3>
+                    <p>A project based on machine learning algorithms</p>
+                    <a href="https://github.com/your-username/project2" class="btn-link">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Web development project</h3>
+                    <p>A project is built using HTML, CSS, JS</p>
+                    <a href="https://github.com/your-username/project3" class="btn-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p>If you want to collaborate or have any inquiries, feel free to reach out to me!</p>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn-main">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name | All Rights Reserved</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

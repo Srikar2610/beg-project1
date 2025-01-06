@@ -1,3 +1,4 @@
+// Form submission handler
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -7,7 +8,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
     if (name && email && message) {
         alert('Thank you for reaching out! Your message has been sent.');
-        // Reset form
         document.getElementById('contact-form').reset();
     } else {
         alert('Please fill in all fields before submitting.');
